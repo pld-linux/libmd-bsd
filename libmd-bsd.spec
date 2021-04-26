@@ -1,16 +1,16 @@
 Summary:	Message Digest functions from BSD systems
 Summary(pl.UTF-8):	Funkcje skrótów wiadomości (MD) z systemów BSD
 Name:		libmd-bsd
-Version:	1.0.1
+Version:	1.0.3
 Release:	1
 License:	BSD, ISC, Public Domain
 Group:		Libraries
 Source0:	https://libbsd.freedesktop.org/releases/libmd-%{version}.tar.xz
-# Source0-md5:	9afe953ea048a9a5ec47015529ec2129
+# Source0-md5:	58f9a39d0a4296c7d2d59287d4f81cdf
 URL:		https://libbsd.freedesktop.org/
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Obsoletes:	libmd
+Obsoletes:	libmd < 0.4
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -32,7 +32,7 @@ Summary:	Header files for BSD MD library
 Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki BSD MD
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
-Obsoletes:	libmd-devel
+Obsoletes:	libmd-devel < 0.4
 
 %description devel
 Header files for BSD MD library.
@@ -45,7 +45,7 @@ Summary:	Static BSD MD library
 Summary(pl.UTF-8):	Statyczna biblioteka BSD MD
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
-Obsoletes:	libmd-static
+Obsoletes:	libmd-static < 0.4
 
 %description static
 Static BSD MD library.
