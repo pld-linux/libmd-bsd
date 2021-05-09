@@ -7,7 +7,7 @@ License:	BSD, ISC, Public Domain
 Group:		Libraries
 Source0:	https://libbsd.freedesktop.org/releases/libmd-%{version}.tar.xz
 # Source0-md5:	58f9a39d0a4296c7d2d59287d4f81cdf
-URL:		https://libbsd.freedesktop.org/
+URL:		https://www.hadrons.org/software/libmd/
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Obsoletes:	libmd < 0.4
@@ -38,7 +38,7 @@ Obsoletes:	libmd-devel < 0.4
 Header files for BSD MD library.
 
 %description devel -l pl.UTF-8
-Pliki nagłówkowe biblioteki BSD.
+Pliki nagłówkowe biblioteki BSD MD.
 
 %package static
 Summary:	Static BSD MD library
